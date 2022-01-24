@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Beastly&display=swap');
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: rgb(2, 2, 2);
+}
+
+.container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.coin {
+    display: flex;
+    position: absolute;
+    border: 4px double orange;
+    border-color: white;
+    border-radius: 85px;
+    margin-top: 11%;
+    justify-content: center;
+    text-align: center;
+    width: 170px;
+    height: 170px;
+    cursor: pointer;
+}
+
+.text {
+    position: absolute;
+    color: #00ffc46e;
+    text-decoration: none;
+    font-family: fantasy;
+    letter-spacing: 6px;
+    font-size: 2rem;
+    top: 50px;
+}
+
+button {
+    background-color: #00ffc390;
+    position: absolute;
+    margin-top: 55vh;
+    padding: 12px;
+    border-radius: 10px;
+    border-color: white;
+    font-family: 'Rubik Beastly', cursive;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: #00ffc386;
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+}
+
+.coin-flip {
+    animation: flip 0.1s infinite ease-in-out;
+}
+
+@keyframes flip {
+    0% {
+        transform: rotateX(110deg);
+    }
+}
